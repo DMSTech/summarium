@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'cesgdb';
-$db['default']['password'] = 'codd2005';
+$db['default']['username'] = 'dmstech';
+$db['default']['password'] = 'tb-dms12';
 $db['default']['database'] = 'summarium';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
