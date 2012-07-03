@@ -1,7 +1,22 @@
 /* ===== Primary Styles ========================================================
    Author: Rafael Schwemmer
    ========================================================================== */
+body {
+  background: #fefefe;
+  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  line-height:160%;
+}
 
+
+a {
+  color: #18594B;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
 
 .content-container {
   margin: 0 auto;
@@ -27,11 +42,19 @@
 
 .hero-unit {
   background-color: #000;
-  background-image: linear-gradient(bottom, rgb(213,219,210) 5%, rgb(105,125,125) 53%);
-  background-image: -o-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(105,125,125) 53%);
-  background-image: -moz-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(105,125,125) 53%);
-  background-image: -webkit-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(105,125,125) 53%);
-  background-image: -ms-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(105,125,125) 53%);
+  background-image: linear-gradient(bottom, rgb(213,219,210) 5%, rgb(58,64,64) 53%);
+  background-image: -o-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(58,64,64) 53%);
+  background-image: -moz-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(58,64,64) 53%);
+  background-image: -webkit-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(58,64,64) 53%);
+  background-image: -ms-linear-gradient(bottom, rgb(213,219,210) 5%, rgb(58,64,64) 53%);
+
+  background-image: -webkit-gradient(
+  	linear,
+  	left bottom,
+  	left top,
+  	color-stop(0.05, rgb(213,219,210)),
+  	color-stop(0.53, rgb(58,64,64))
+  );
   border: 1px solid #ccc;
   color: #ffffff;
   margin: 10px 0 30px 0;
@@ -74,19 +97,20 @@
   border-right: 1px dotted #999;
 }
 
-body {
-  background: #fefefe;
-    font-family : Sans-serif;
-  font-size: 1em;
+.footer_logo {
+  margin-left:250px;
 }
+
+/* Navigation Sidebar */
+
 .sidebar {
   background: #ebebeb;
   border-right: 1px solid #bdbdbd;
   left: 0;
-    position: fixed;
+  position: fixed;
   top: 0;
   height: 100%;
-    width: 190px;
+  width: 190px;
 }
 
 .nav {
@@ -129,7 +153,7 @@ body {
   -webkit-box-shadow: inset 0px 1px 0px 0 rgba(255, 255, 255, 0.2);
   -moz-box-shadow: inset 0px 1px 0px 0 rgba(255, 255, 255, 0.2);
   box-shadow: inset 0px 1px 0px 0 rgba(255, 255, 255, 0.2);
-  background-color: #5FAEDF;
+  background-color: #18594B;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$lightColor , endColorstr=$darkColor);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#5FAEDF), to(#4889B4));
   background-image: -moz-linear-gradient(top, #5FAEDF, #4889B4);
@@ -148,7 +172,7 @@ body {
   transform: rotate(62deg) skew(30deg);
   margin-top: -32px;
   margin-left: 177px;
-  background: #5FAEDF;
+  background: #18594B;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$lightBlue , endColorstr=$darkBlue);
   background: -webkit-gradient(linear, left top, right bottom, from(#5FAEDF), to(#4889B4));
   background: -moz-linear-gradient(-45deg, #5FAEDF, #4889B4);
@@ -165,3 +189,9 @@ body {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
+
+.nav > li > a:hover {
+    background-color:transparent;
+}
+
+/* End Navigation Sidebar */

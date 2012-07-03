@@ -51,48 +51,32 @@
 	      <div class="row-fluid">
 	        <div class="span9 border-right-dotted">
 	          <h3>Digital Edition</h3>
-	          <p>
-							Mauris ipsum est, tincidunt at elementum at, dignissim sit amet lacus. Phasellus faucibus, neque in rutrum 
-							vulputate, nibh tellus sollicitudin quam, id pretium odio est vitae elit. Nulla sit amet neque sed nunc 
-							consequat viverra sit amet eget tellus. Sed consequat gravida sapien ut tempus. Nam eget orci nunc. 
-						</p>
-						<p>	
-							Aliquam ultrices venenatis nulla in congue. Praesent congue, magna at mattis aliquet, diam diam faucibus nibh, 
-							sit amet consequat enim neque sed eros.
-						</p>
-	          <p><a class="btn" href="#">To the digital edition &raquo;</a></p>                      
-	          <br/><br/>
-          
-	          <h3>About</h3>
-	          <p>
-							Morbi consequat, sem eget lobortis vulputate, erat felis laoreet nulla, in aliquam nulla dolor id purus. 
-							Proin velit lorem, ultrices at luctus vel, volutpat ac tortor. Morbi ac diam odio. Lorem ipsum dolor sit amet, 
-							consectetur adipiscing elit. Aliquam tincidunt odio nec sapien rhoncus pharetra. Quisque tortor ipsum, dictum non 
-							accumsan et, viverra ut sem. Fusce vestibulum ligula ac leo rutrum eget fermentum leo blandit. 
-						</p>
-						<p>								
-							Aliquam tempor, diam ac aliquam ultrices, velit tortor tincidunt nisl, et elementum massa diam eget erat. Quisque 
-							pharetra auctor adipiscing. Nullam euismod leo ac lacus pellentesque cursus. Cras arcu justo, auctor vitae 
-							vulputate a, dictum nec libero.	<a href="#">View details &raquo;</a>
-	          </p>
+	          <p>Mauris ipsum est, tincidunt at elementum at, dignissim sit amet lacus. Phasellus faucibus, neque in rutrum vulputate, nibh tellus sollicitudin quam, id pretium odio est vitae elit. Nulla sit amet neque sed nunc consequat viverra sit amet eget tellus. Sed consequat gravida sapien ut tempus. Nam eget orci nunc. 
+			  </p>
+			   <p>Aliquam ultrices venenatis nulla in congue. Praesent congue, magna at mattis aliquet, diam diam faucibus nibh, sit amet consequat enim neque sed eros.
+			   </p>
+	           <p><a class="btn btn-large" href="#">To the digital edition &raquo;</a></p>                      
+	           <br/>
+               
+               <br/>          
+	           <h3>About</h3>
+	          <p>Morbi consequat, sem eget lobortis vulputate, erat felis laoreet nulla, in aliquam nulla dolor id purus. Proin velit lorem, ultrices at luctus vel, volutpat ac tortor. Morbi ac diam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt odio nec sapien rhoncus pharetra. Quisque tortor ipsum, dictum non accumsan et, viverra ut sem. Fusce vestibulum ligula ac leo rutrum eget fermentum leo blandit. 
+			   </p>
+				<p>Aliquam tempor, diam ac aliquam ultrices, velit tortor tincidunt nisl, et elementum massa diam eget erat. Quisque pharetra auctor adipiscing. Nullam euismod leo ac lacus pellentesque cursus. Cras arcu justo, auctor vitae vulputate a, dictum nec libero.
+	           </p>
 	        </div>
 	        <div class="span3">
 	          <h3>Contact</h3>
-	          <p>
-							Donec sed odio dui <br/>
-							Cras justo odio <br/>
-							Dapibus ac facilisis in<br/> 
-							<a href="">Vestibulum id ligula porta</a> 
-						</p>
+	          <p>Donec sed odio dui <br/>
+				 Cras justo odio <br/>
+				 Dapibus ac facilisis in<br/> 
+				<a href="">Vestibulum id ligula porta</a> 
+			  </p>
 	        </div>
 	      </div>
 
-	      <hr/>
-
-	      <footer>
-	        <p>&copy; 2012 <a href="http://www.textandbytes.com" target="_blank">text &amp; bytes GmbH</a> | </p>
-	      </footer>
-
+		  <?php include(APPPATH . 'views/partials/_footer.php'); ?>
+		  
 	    </div> <!-- /container-fluid -->
 	  </div>  
 	</div>    
@@ -104,11 +88,7 @@
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/transition.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/collapse.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/dropdown.js"></script>
-	<script src="<?php echo site_url(); ?>js/libs/jplayer.min.js"></script>
-	<script src="<?php echo site_url(); ?>js/libs/jplayer.playlist.min.js"></script>
-
 	<script src="<?php echo site_url(); ?>js/plugins.js"></script>
-	<script src="<?php echo site_url(); ?>js/jplayer-playlist-data.js"></script>	
 	<script src="<?php echo site_url(); ?>js/summarium.js"></script>
 	<?php include APPPATH . '/views/partials/_googleAnalyticsCode.php'; ?>
 </body>
