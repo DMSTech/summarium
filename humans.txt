@@ -1,0 +1,27 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Medieval Latin Manuscript Transmission Working Group
+  
+  Scientific Coordinator: Marjorie Burghart
+  Location: Ecole des Hautes Etudes en Sciences Sociales, Lyon, France
+  Site: http://marjorie.burghart.online.fr/
+  
+  Technical Coordinator: Benjamin Albritton
+  Location: Stanford University Libraries, Palo Alto
+  Site: http://lib.stanford.edu/DMSTech
+
+  Programming & Design: Rafael Schwemmer, text & bytes LLC
+  Site: http://www.textandbytes.com
+  Location: Bern, Switzerland
+
+/* THANKS */
+  Andrew W. Mellon Foundation, http://www.mellon.org
+  https://github.com/h5bp/html5-boilerplate/contributors
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: PHP / CodeIgniter
