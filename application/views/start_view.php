@@ -70,7 +70,7 @@
 	          <p>Donec sed odio dui <br/>
 				 Cras justo odio <br/>
 				 Dapibus ac facilisis in<br/> 
-				<a href="">Vestibulum id ligula porta</a> 
+				<a href="<?php echo site_url('auth/register'); ?>">Register</a>&nbsp;|&nbsp;<a href="<?php echo site_url('auth/register'); ?>">Login</a> 
 			  </p>
 	        </div>
 	      </div>
