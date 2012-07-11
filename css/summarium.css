@@ -24,6 +24,10 @@ a:hover {
   width: 80%;
 }
 
+label {
+  display:inline;
+}
+
 .content-container .container-fluid {
   padding: 0;
 }

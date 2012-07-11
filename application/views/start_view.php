@@ -70,8 +70,39 @@
 	          <p>Donec sed odio dui <br/>
 				 Cras justo odio <br/>
 				 Dapibus ac facilisis in<br/> 
-				<a href="<?php echo site_url('auth/register'); ?>">Register</a>&nbsp;|&nbsp;<a href="<?php echo site_url('auth/register'); ?>">Login</a> 
 			  </p>
+				
+				<a class="btn" id="login-button" data-toggle="modal" href="auth/login">Login</a>
+				<a class="btn" id="register-button" data-toggle="modal" href="auth/register">Register</a>
+				
+				<div class="modal hide" id="login-modal">
+				  <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal">×</button>
+				    <h3>Login</h3>
+				   </div>
+				   <div class="modal-body">
+				     <p id="login-form-container"></p>
+				   </div>
+				   <div class="modal-footer">
+				     <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+				   </div>
+				 </div>
+
+				<div class="modal hide" id="register-modal">
+				  <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal">×</button>
+				    <h3>Register</h3>
+				   </div>
+				   <div class="modal-body">
+				     <p id="register-form-container"></p>
+				   </div>
+				   <div class="modal-footer">
+				     <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+				   </div>
+				 </div>
+
+
+
 	        </div>
 	      </div>
 
@@ -82,14 +113,13 @@
 	</div>    
 
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
+	<script src="<?php echo site_url('/js/libs/jquery-1.7.1.min.js'); ?>"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/transition.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/collapse.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/dropdown.js"></script>
+	<script src="<?php echo site_url(); ?>js/libs/bootstrap/modal.js"></script>
 	<script src="<?php echo site_url(); ?>js/plugins.js"></script>
 	<script src="<?php echo site_url(); ?>js/summarium.js"></script>
-	<?php include APPPATH . '/views/partials/_googleAnalyticsCode.php'; ?>
+
 </body>
 </html>

@@ -84,10 +84,12 @@ $captcha = array(
 		<td colspan="3">
 			<?php echo form_checkbox($remember); ?>
 			<?php echo form_label('Remember me', $remember['id']); ?>
-			<?php echo anchor('/auth/forgot_password/', 'Forgot password'); ?>
+			<div style="text-align:right">
+			<?php echo anchor('/auth/forgot_password/', 'Forgot password'); ?> | 
 			<?php if ($this->config->item('allow_registration', 'tank_auth')) echo anchor('/auth/register/', 'Register'); ?>
+			</div>
 		</td>
 	</tr>
 </table>
-<?php echo form_submit('submit', 'Let me in'); ?>
+<?php echo form_submit('submit', 'Let me in', 'class="btn"'); ?>
 <?php echo form_close(); ?>
