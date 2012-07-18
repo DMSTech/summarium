@@ -69,11 +69,17 @@
 	          <h3>Contact</h3>
 	          <p>Donec sed odio dui <br/>
 				 Cras justo odio <br/>
-				 Dapibus ac facilisis in<br/> 
+				 Dapibus ac facilisis in<br/>				 
 			  </p>
-				
-				<a class="btn" id="login-button" data-toggle="modal" href="auth/login">Login</a>
-				<a class="btn" id="register-button" data-toggle="modal" href="auth/register">Register</a>
+				<?php if ($this->tank_auth->is_logged_in()): ?> 
+				    <p>Welcome <b><?php echo $this->tank_auth->get_username(); ?></b>!</p>
+					<a class="btn" id="logout-button" href="auth/logout">Logout</a>
+					
+
+			    <?php else: ?> 
+				    <a class="btn" id="login-button" data-toggle="modal" href="auth/login">Login</a>
+				    <a class="btn" id="register-button" data-toggle="modal" href="auth/register">Register</a>
+			    <?php endif; ?>
 				
 				<div class="modal hide" id="login-modal">
 				  <div class="modal-header">
