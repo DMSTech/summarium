@@ -148,6 +148,28 @@ class Tank_auth
 	{
 		return $this->ci->session->userdata('username');
 	}
+	
+	/**
+	 * Get user object
+	 *
+	 * Cf. http://www.sjdev.co.uk/2011/03/09/get-user-object-in-tank-auth/
+	 *
+	 * @return object
+	 */
+	function get_user($id = false, $activated = true)
+	{
+	    if(!$id) {
+	        $id = $this->get_user_id();
+	        // return false if get_user_id() does not
+	        // give a correct user ID
+	        if(!$id) {
+	            return false;
+	        }
+	    }
+ 
+	    $user = $this->ci->users->get_user_by_id($id, $activated);
+	    return $user;
+	}
 
 	/**
 	 * Create new user on the site and return some data about it:
