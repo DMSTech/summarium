@@ -12,13 +12,12 @@ class Digitaledition extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-		$this->load->model('Sequences_model');
     }
 
     /**
      * index
      *
-     * Returns an array of objects with all manuscripts and their first pages for a given (audio) sequence number
+     * Main method for digital edition summarium
      * 
      * @param string $sequence_id
      * @return void
