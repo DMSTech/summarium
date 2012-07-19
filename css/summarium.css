@@ -146,7 +146,7 @@ label {
 .nav li a {
   color: #616161;
   display: block;
-  margin-left: 10px;
+  padding-left: 15px;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
