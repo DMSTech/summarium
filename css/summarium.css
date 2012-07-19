@@ -32,6 +32,11 @@ label {
   padding: 0;
 }
 
+.center {
+	margin:auto !important;
+	text-align:center;
+}
+
 /* home page */
 
 .bottom-content-container {
@@ -85,6 +90,10 @@ label {
   border-left: 3px solid #d8623b;
   font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px 0 25px 0;
+}
+
+.hero-unit-subpage {
+	max-height:60px;
 }
 
 .bottom-content-container hr {
@@ -203,3 +212,9 @@ label {
 }
 
 /* End Navigation Sidebar */
+
+/* Summarium Page - Select between Image and Text Navigation */
+.main-section-select {
+	padding-left:25%;
+	padding-bottom:20%;
+}
