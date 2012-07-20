@@ -26,8 +26,8 @@
 		<ul class="nav">
 			<li class="active"><a href="<?php echo site_url(); ?>">Home</a></li>
 			<li><a href="<?php echo site_url('summarium'); ?>">Summarium</a></li>
-			<li><a href="<?php echo site_url('summarium/image-navigation'); ?>">&nbsp;&nbsp;&nbsp;Image Navigation</a></li>
-			<li><a href="<?php echo site_url('summarium/text-navigation'); ?>">&nbsp;&nbsp;&nbsp;Text Navigation</a></li>
+			<li><a href="<?php echo site_url('summarium/image'); ?>">&nbsp;&nbsp;&nbsp;Image Navigation</a></li>
+			<li><a href="<?php echo site_url('summarium/text'); ?>">&nbsp;&nbsp;&nbsp;Text Navigation</a></li>
 		</ul>
 	</div>
 

@@ -26,8 +26,8 @@
 		<ul class="nav">
 			<li><a href="<?php echo site_url(); ?>">Home</a></li>
 			<li class="active"><a href="<?php echo site_url('summarium'); ?>">Summarium</a></li>
-			<li><a href="<?php echo site_url('summarium/image-navigation'); ?>">&nbsp;&nbsp;&nbsp;Image Navigation</a></li>
-			<li><a href="<?php echo site_url('summarium/text-navigation'); ?>">&nbsp;&nbsp;&nbsp;Text Navigation</a></li>
+			<li><a href="<?php echo site_url('summarium/image'); ?>">&nbsp;&nbsp;&nbsp;Image Navigation</a></li>
+			<li><a href="<?php echo site_url('summarium/text'); ?>">&nbsp;&nbsp;&nbsp;Text Navigation</a></li>
 		</ul>
 	</div>
 
@@ -35,7 +35,7 @@
 	  <div class="container-fluid">
 	      <div class="hero-unit hero-unit-subpage">
 	        <h1>Summarium</h1>
-	        <h2>A Digital Edition</h2>
+	        <h2>Overview</h2>
 	      </div>
 		  <div class="center main-section-select">
 		  <ul class="thumbnails">
