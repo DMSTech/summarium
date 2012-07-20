@@ -10,12 +10,12 @@ class Summarium extends CI_Controller {
 		$this->load->view('summarium_view');
 	}
 	
-	public function imageNavigation() {
-		$this->load->view('imageNavigation_view');
+	public function image() {
+		$this->load->view('image_view');
 	}
 
-	public function textNavigation() {
-		$this->load->view('textNavigation_view');
+	public function text() {
+		$this->load->view('text_view');
 	}
 	
 }
