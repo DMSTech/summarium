@@ -41,16 +41,21 @@
 		  <ul class="thumbnails">
 		      <li class="span3">
 		          <div class="thumbnail">
-		              <img src="http://placehold.it/260x180" alt="">
-		              <h5>Image Navigation</h5>
+					  <a href="<?php echo site_url('summarium/image'); ?>">
+		              	<img src="http://placehold.it/260x180" alt="Image Navigation" title="Image Navigation">
+					  </a>
+		              <h5><a href="<?php echo site_url('summarium/image'); ?>">Image Navigation</a></h5>
 		              <p>Image Navigation provides a way to...</p>
 		          </div>
 		      </li>
 		      <li class="span3">
 		          <div class="thumbnail">
-		              <img src="http://placehold.it/260x180" alt="">
-		              <h5>Text Navigation</h5>
+		              <a href="<?php echo site_url('summarium/text'); ?>">
+						  <img src="http://placehold.it/260x180" alt="Text Navigation" title="Text Navigation">
+					  </a>
+		              <h5><a href="<?php echo site_url('summarium/text'); ?>">Text Navigation</a></h5>
 		              <p>On Text Navigation you can choose...</p>
+					  </a>
 		          </div>
 		      </li>
 		      </ul>
