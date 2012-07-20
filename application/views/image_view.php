@@ -38,16 +38,59 @@
 	        <h2>Image Navigation</h2>
 	      </div>
 		  <div class="btn-group">
+			  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+				  Select Manuscript
+				  <span class="caret"></span>
+			  </a>
+			  <ul class="dropdown-menu">
+				  <li><a href="#">Manuscript 1</a></li>
+				  <li><a href="#">Manuscript 2</a></li>
+				  <li><a href="#">Manuscript 3</a></li>
+				  <li><a href="#">Manuscript 4</a></li>
+			  </ul>
+		  </div>
+		  <div id="image_select">
+		  <div class="btn-group" data-toggle="buttons-radio">
 		      <button class="btn">Select</button>
 		      <button class="btn">Compare</button>
 		  </div>
-		  <div id="image_select">
-		  	
+  		  <ul class="thumbnails vertical">
+  		      <li>
+  		          <div class="thumbnail">
+  		              <img src="http://placehold.it/100x150" alt="">
+  		              <p>p. 1</p>
+  		          </div>
+  		      </li>
+  		      <li>
+  		          <div class="thumbnail">
+  		              <img src="http://placehold.it/100x150" alt="">
+  		              <p>p. 2</p>
+  		          </div>
+  		      </li>
+  		      <li>
+  		          <div class="thumbnail">
+  		              <img src="http://placehold.it/100x150" alt="">
+  		              <p>p. 3</p>
+  		          </div>
+  		      </li>
+  		      <li>
+  		          <div class="thumbnail">
+  		              <img src="http://placehold.it/100x150" alt="">
+  		              <p>p. 4</p>
+  		          </div>
+  		      </li>	
+  		      <li>
+  		          <div class="thumbnail">
+  		              <img src="http://placehold.it/100x150" alt="">
+  		              <p>p. 5</p>
+  		          </div>
+  		      </li>		  
+  		      </ul>
 		  </div>
 		  <div id="image_detail_view">
-		  	
+		  	<img src="http://placehold.it/500x800" alt="">
 		  </div>
-		  
+		 <br />
 	   <?php include(APPPATH . 'views/partials/_footer.php'); ?>
 	  </div> <!-- /container-fluid -->
 	</div>
@@ -57,6 +100,7 @@
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/collapse.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/dropdown.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/modal.js"></script>
+	<script src="<?php echo site_url(); ?>js/libs/bootstrap/button.js"></script>
 	<script src="<?php echo site_url(); ?>js/plugins.js"></script>
 	<script src="<?php echo site_url(); ?>js/summarium.js"></script>
 

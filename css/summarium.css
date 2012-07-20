@@ -32,6 +32,8 @@ label {
   padding: 0;
 }
 
+/* generic classes */
+
 .center {
 	margin:auto !important;
 	text-align:center;
@@ -93,7 +95,8 @@ label {
 }
 
 .hero-unit-subpage {
-	max-height:60px;
+	max-height:80px;
+	padding:20px 60px;
 }
 
 .bottom-content-container hr {
@@ -112,6 +115,10 @@ label {
 
 .footer_logo {
   margin-left:250px;
+}
+
+footer a {
+  color:#901319;
 }
 
 /* Navigation Sidebar */
@@ -218,3 +225,40 @@ label {
 	padding-left:25%;
 	padding-bottom:20%;
 }
+
+/* End Summarium Page */
+
+/* Image Navigation */
+
+.vertical {
+	margin-top:20px;
+}
+
+.vertical li {
+	clear:both;
+}
+
+#image_select {
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid silver;
+	height: 600px;
+	width:160px;
+	overflow:scroll;
+	margin:20px 0;
+	padding:10px;
+	float:left;
+}
+
+#image_detail_view {
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid silver;
+	margin:20px 200px;
+	padding:20px;
+	height:580px;
+	overflow:scroll;
+}
+	
