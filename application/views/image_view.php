@@ -48,6 +48,9 @@
 				  <li><a href="#">Manuscript 3</a></li>
 				  <li><a href="#">Manuscript 4</a></li>
 			  </ul>
+              <span class="span4">
+                <?php include APPPATH . '/views/partials/_manuscript_desc_md.php'; ?>          
+              </span>  
 		  </div>
 		  <div id="image_select">
 		  <div class="btn-group" data-toggle="buttons-radio">
@@ -57,38 +60,38 @@
   		  <ul class="thumbnails vertical">
   		      <li>
   		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="">
+  		              <img src="http://placehold.it/100x150" alt="" />
   		              <p>p. 1</p>
   		          </div>
   		      </li>
   		      <li>
   		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="">
+  		              <img src="http://placehold.it/100x150" alt="" />
   		              <p>p. 2</p>
   		          </div>
   		      </li>
   		      <li>
   		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="">
+  		              <img src="http://placehold.it/100x150" alt="" />
   		              <p>p. 3</p>
   		          </div>
   		      </li>
   		      <li>
   		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="">
+  		              <img src="http://placehold.it/100x150" alt="" />
   		              <p>p. 4</p>
   		          </div>
   		      </li>	
   		      <li>
   		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="">
+  		              <img src="http://placehold.it/100x150" alt="" />
   		              <p>p. 5</p>
   		          </div>
   		      </li>		  
   		      </ul>
 		  </div>
 		  <div id="image_detail_view">
-		  	<img src="http://placehold.it/500x800" alt="">
+		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss')?>/index_wv_PragueIG11af10v.jpg" alt="" />
 		  </div>
 		 <br />
 	   <?php include(APPPATH . 'views/partials/_footer.php'); ?>
@@ -101,6 +104,8 @@
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/dropdown.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/modal.js"></script>
 	<script src="<?php echo site_url(); ?>js/libs/bootstrap/button.js"></script>
+	<script src="<?php echo site_url(); ?>js/libs/bootstrap/tooltip.js"></script>
+	<script src="<?php echo site_url(); ?>js/libs/bootstrap/popover.js"></script>
 	<script src="<?php echo site_url(); ?>js/plugins.js"></script>
 	<script src="<?php echo site_url(); ?>js/summarium.js"></script>
 

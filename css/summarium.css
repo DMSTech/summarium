@@ -261,4 +261,13 @@ footer a {
 	height:580px;
 	overflow:scroll;
 }
-	
+
+#image_detail_view_img {
+	float:left;
+}
+
+.thumbnail p {
+	text-align:center;
+	font-size:80%;
+	padding-top:5px;
+}

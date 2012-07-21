@@ -36,6 +36,8 @@ $(document).ready(function() {
         });
     });
     
+    $('#ms-desc-metadata').popover();
+    
     function ajaxLoadLoginForm(url) {
         var dataString = $('#login_form').serialize();
         $.ajax({
