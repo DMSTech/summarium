@@ -191,7 +191,7 @@ footer a {
   display: block;
   width: 26px;
   height: 20px;
-  -moz-transform: rotate(62deg) skew(30deg);
+  -moz-transform: rotate(62deg) skewX(30deg);
   -webkit-transform: rotate(62deg) skew(30deg);
   transform: rotate(62deg) skew(30deg);
   margin-top: -32px;
