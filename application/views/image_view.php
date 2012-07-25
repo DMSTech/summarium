@@ -91,7 +91,7 @@
   		      </ul>
 		  </div>
 		  <div id="image_detail_view">
-		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss')?>/index_wv_PragueIG11af10v.jpg" alt="" />
+		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $manuscript_pages[0]->filename) ?>" alt="" />
 		  </div>
 		 <br />
 	   <?php include(APPPATH . 'views/partials/_footer.php'); ?>

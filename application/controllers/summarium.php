@@ -25,6 +25,7 @@ class Summarium extends CI_Controller {
 		$this->load->model('manuscripts');
 		$data['manuscripts'] = $this->manuscripts->getAvailableManuscripts();
 		$data['desc_metadata'] = $this->manuscripts->getMetadataForManuscript($xmlid);
+		$data['manuscript_pages'] = $this->manuscripts->getPagesForManuscript($xmlid);
 		$this->load->view('image_view', $data);
 	}
 

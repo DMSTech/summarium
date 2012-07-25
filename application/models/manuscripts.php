@@ -22,7 +22,7 @@ class Manuscripts extends CI_Model {
      *
      * Retrieve a list of all available manuscripts and metadata from DB table "manuscripts"
      *
-     * @return array
+     * @return array the manuscript objects
      */
     public function getAvailableManuscripts() {
         $query = $this->db->get('manuscripts');
@@ -41,9 +41,22 @@ class Manuscripts extends CI_Model {
    public function getMetadataForManuscript($xmlid) {
        $this->db->where('xmlid', $xmlid);
        $query = $this->db->get('manuscripts');
-       $result = $query->row();
-       return $query->num_rows > 0 ? $result : FALSE;
+       return $query->num_rows > 0 ? $query->row() : FALSE;
    }
+
+   /**
+   * getPagesForManuscript
+   *
+   * Retrieve pages from DB table "manuscript_pages" for given manuscript ID
+   *
+   * @param string xmlid the xmlid of the manuscript
+   * @return array the manuscript pages
+   */
+  public function getPagesForManuscript($xmlid) {
+      $this->db->where('manuscripts_xmlid', $xmlid);
+      $query = $this->db->get('manuscript_pages');
+      return $query->num_rows > 0 ? $query->result() : FALSE;
+  }
     
     
 }

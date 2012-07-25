@@ -6,14 +6,18 @@ $manuscript->settlement = 'Prag';
 $manuscript->repository = 'National Library';	
 $manuscript->shelfmark = 'G 11a';	
 
-$metadata = 
-	'<b>' . 
-		$desc_metadata->msTitle . '</b><br />' . 
+$metadata = '<h4>' . 
 		$desc_metadata->settlement . ', ' . 
-		$desc_metadata->repository . ', ' . 
-		$desc_metadata->shelfmark
+		$desc_metadata->repository . ', Ms ' . 
+		$desc_metadata->shelfmark . '</h4><br />' . 
+		'<b>Title: </b>' . $desc_metadata->msTitle . '<br />' . 
+		'<b>Date of origin: </b>' . $desc_metadata->origDate . '<br />' . 
+		'<b>Place of origin: </b>' . $desc_metadata->origPlace . '<br />' . 
+		'<b>Material: </b>' . $desc_metadata->material . '<br />' .
+		'<b>Provenance: </b>' . $desc_metadata->provenance . '<br />';
+		
 ?>
-<a id="ms-desc-metadata" data-content="<?php echo $metadata; ?>" rel="popover" class="btn btn-info" href="#" data-original-title="Metadata">Mauscript Metadata</a>
+<a id="ms-desc-metadata" data-content="<?php echo $metadata; ?>" rel="popover" class="btn btn-info" href="#" data-original-title="Metadata">Manuscript Metadata</a>
 
 <!-- 
 <h3>Metadata</h3>
