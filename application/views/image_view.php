@@ -50,7 +50,7 @@
               <span class="span4">
                 <?php include APPPATH . '/views/partials/_manuscript_desc_md.php'; ?>          
               </span>  
-			  <h3><?php echo $desc_metadata->settlement . ', ' . $desc_metadata->repository . ', Ms ' . $desc_metadata->shelfmark ; ?></3>
+			  <h3><?php echo $full_ms_identifier . ', ' . $manuscript_pages[0]->pagelabel; ; ?></3>
 		  </div>
 		  <div id="image_select">
 		  <div class="btn-group" data-toggle="buttons-radio">
@@ -91,7 +91,7 @@
   		      </ul>
 		  </div>
 		  <div id="image_detail_view">
-		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $manuscript_pages[0]->filename) ?>" alt="" />
+		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $manuscript_pages[0]->filename) ?>" alt="<?php echo $full_ms_identifier . ', ' . $manuscript_pages[0]->pagelabel  ; ?>" title="<?php echo $full_ms_identifier . ', ' . $manuscript_pages[0]->pagelabel; ?>" />
 		  </div>
 		 <br />
 	   <?php include(APPPATH . 'views/partials/_footer.php'); ?>
