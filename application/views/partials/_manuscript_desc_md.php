@@ -5,8 +5,15 @@ $manuscript->ms_title = 'Summarium';
 $manuscript->settlement = 'Prag';	
 $manuscript->repository = 'National Library';	
 $manuscript->shelfmark = 'G 11a';	
+
+$desc_metadata = 
+	'<b>' . 
+		$manuscript->ms_title . '</b><br />' . 
+		$manuscript->settlement . ', ' . 
+		$manuscript->repository . ', ' . 
+		$manuscript->shelfmark
 ?>
-<a id="ms-desc-metadata" data-content="<?php echo '<b>' . $manuscript->ms_title . '</b><br />' . $manuscript->settlement . ', ' . $manuscript->repository . ', ' . $manuscript->shelfmark; ?>" rel="popover" class="btn btn-info" href="#" data-original-title="Metadata">Mauscript Metadata</a>
+<a id="ms-desc-metadata" data-content="<?php echo $desc_metadata; ?>" rel="popover" class="btn btn-info" href="#" data-original-title="Metadata">Mauscript Metadata</a>
 
 <!-- 
 <h3>Metadata</h3>
