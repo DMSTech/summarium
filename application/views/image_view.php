@@ -50,6 +50,7 @@
               <span class="span4">
                 <?php include APPPATH . '/views/partials/_manuscript_desc_md.php'; ?>          
               </span>  
+			  <span><b><?php echo $desc_metadata->settlement . ', ' . $desc_metadata->repository . ', Ms ' . $desc_metadata->shelfmark ; ?></b></span>
 		  </div>
 		  <div id="image_select">
 		  <div class="btn-group" data-toggle="buttons-radio">
