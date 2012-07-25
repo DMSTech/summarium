@@ -43,10 +43,9 @@
 				  <span class="caret"></span>
 			  </a>
 			  <ul class="dropdown-menu">
-				  <li><a href="#">Manuscript 1</a></li>
-				  <li><a href="#">Manuscript 2</a></li>
-				  <li><a href="#">Manuscript 3</a></li>
-				  <li><a href="#">Manuscript 4</a></li>
+				  <?php foreach($manuscripts as $manuscript): ?>
+				      <li><a href="<?php echo site_url('summarium/image/' . $manuscript->xmlid); ?>"><?php echo $manuscript->settlement . ', ' . $manuscript->repository . ', ' . $manuscript->shelfmark; ?></a></li>
+			      <?php endforeach; ?>
 			  </ul>
               <span class="span4">
                 <?php include APPPATH . '/views/partials/_manuscript_desc_md.php'; ?>          

@@ -30,4 +30,20 @@ class Manuscripts extends CI_Model {
         return $query->num_rows > 0 ? $result : FALSE;
     }
     
+    /**
+    * getMetadataForManuscript
+    *
+    * Retrieve metadata from DB table "manuscripts" for given manuscript ID
+    *
+    * @param string xmlid the xmlid of the manuscript
+    * @return object the metadata
+    */
+   public function getMetadataForManuscript($xmlid) {
+       $this->db->where('xmlid', $xmlid);
+       $query = $this->db->get('manuscripts');
+       $result = $query->row();
+       return $query->num_rows > 0 ? $result : FALSE;
+   }
+    
+    
 }
