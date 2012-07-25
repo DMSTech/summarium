@@ -39,7 +39,7 @@
 	      <h2>A Digital Edition</h2>
 	      <br/>
 
-	      <p><a class="btn btn-large">View Annotations &raquo;</a></p>
+	      <p><a class="btn btn-large" href="<?php echo site_url('summarium/image'); ?>">View Annotations &raquo;</a></p>
 	    </div>
 	  </div> <!-- /container-fluid -->
 	</div>
@@ -55,7 +55,7 @@
 			  </p>
 			   <p>Aliquam ultrices venenatis nulla in congue. Praesent congue, magna at mattis aliquet, diam diam faucibus nibh, sit amet consequat enim neque sed eros.
 			   </p>
-	           <p><a class="btn btn-large" href="#">To the digital edition &raquo;</a></p>                      
+	           <p><a class="btn btn-large" href="<?php echo site_url('summarium/image'); ?>">To the digital edition &raquo;</a></p>                      
 	           <br/>
                
                <br/>          
