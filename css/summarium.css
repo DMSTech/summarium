@@ -230,6 +230,10 @@ footer a {
 
 /* Image Navigation */
 
+.popover-inner {
+	width:450px;
+}
+
 .vertical {
 	margin-top:20px;
 }
