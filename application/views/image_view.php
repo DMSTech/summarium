@@ -44,13 +44,13 @@
 			  </a>
 			  <ul class="dropdown-menu">
 				  <?php foreach($manuscripts as $manuscript): ?>
-				      <li><a href="<?php echo site_url('summarium/image/' . $manuscript->xmlid); ?>"><?php echo $manuscript->settlement . ', ' . $manuscript->repository . ', ' . $manuscript->shelfmark; ?></a></li>
+				      <li><a href="<?php echo site_url('summarium/image/' . $manuscript->xmlid); ?>"><?php echo $manuscript->settlement . ', ' . $manuscript->repository . ', Ms ' . $manuscript->shelfmark; ?></a></li>
 			      <?php endforeach; ?>
 			  </ul>
               <span class="span4">
                 <?php include APPPATH . '/views/partials/_manuscript_desc_md.php'; ?>          
               </span>  
-			  <span><b><?php echo $desc_metadata->settlement . ', ' . $desc_metadata->repository . ', Ms ' . $desc_metadata->shelfmark ; ?></b></span>
+			  <h3><?php echo $desc_metadata->settlement . ', ' . $desc_metadata->repository . ', Ms ' . $desc_metadata->shelfmark ; ?></3>
 		  </div>
 		  <div id="image_select">
 		  <div class="btn-group" data-toggle="buttons-radio">
