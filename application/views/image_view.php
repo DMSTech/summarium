@@ -61,7 +61,9 @@
 			  <?php foreach($manuscript_pages as $manuscript_page): ?>
   		      <li>
   		          <div class="thumbnail">
-  		              <a href="<?php echo site_url('summarium/image/' . $manuscript_page->manuscripts_xmlid); ?>"><img src="<?php echo site_url('res/mss_thumbs/' . $manuscript_page->filename); ?>" width="100" alt="<?php echo $manuscript_page->pagelabel; ?>" title="<?php echo $manuscript_page->pagelabel; ?>" /></a>
+  		              <a data-content="<?php echo '<h4>' . $manuscript_page->settlement . ', ' . $manuscript_page->repository . ', ' . $manuscript_page->shelfmark . ', ' . $manuscript_page->pagelabel . '</h4>' . $manuscript_page->msTitle; ?>" rel="popover" href="<?php echo site_url('summarium/image/' . $manuscript_page->manuscripts_xmlid); ?>">
+						  <img src="<?php echo site_url('res/mss_thumbs/' . $manuscript_page->filename); ?>" width="100" alt="<?php echo $manuscript_page->pagelabel; ?>" />
+					  </a>
   		              <p><?php echo $manuscript_page->pagelabel; ?></p>
   		          </div>
   		      </li>

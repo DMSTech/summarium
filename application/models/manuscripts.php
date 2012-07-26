@@ -64,11 +64,13 @@ class Manuscripts extends CI_Model {
   /**
   * getAllManuscriptPages
   *
-  * Retrieve all pages from DB table "manuscript_pages"
+  * Retrieve all pages from DB table "manuscript_pages" as well as basic metadata for the respective manuscripts
   *
   * @return array the manuscript pages
   */
  public function getAllManuscriptPages() {
+     $this->db->select('manuscripts.xmlid, manuscripts.settlement, manuscripts.repository, manuscripts.shelfmark, manuscripts.msTitle, manuscript_pages.manuscripts_xmlid, manuscript_pages.filename, manuscript_pages.pagelabel');
+     $this->db->join('manuscripts', 'manuscript_pages.manuscripts_xmlid = manuscripts.xmlid');
      $query = $this->db->get('manuscript_pages');
      return $query->num_rows > 0 ? $query->result() : FALSE;
  }

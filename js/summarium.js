@@ -37,6 +37,8 @@ $(document).ready(function() {
     });
     
     $('#ms-desc-metadata').popover();
+	
+	$('.thumbnail a').popover();
     
     function ajaxLoadLoginForm(url) {
         var dataString = $('#login_form').serialize();
