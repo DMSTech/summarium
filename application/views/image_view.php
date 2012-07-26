@@ -50,7 +50,12 @@
               <span class="span4">
                 <?php include APPPATH . '/views/partials/_manuscript_desc_md.php'; ?>          
               </span>  
-			  <h3><?php echo $full_ms_identifier . ', ' . $current_manuscript_pages[0]->pagelabel; ; ?></3>
+			  <h3>
+			      <?php 
+			  	      $page = $pagelabel != '' ? $current_manuscript_page : $current_manuscript_pages[0];
+					  echo $full_ms_identifier . ', ' . $page->pagelabel; 
+			      ?>
+			  </h3>
 		  </div>
 		  <div id="image_select">
 		  <div class="btn-group" data-toggle="buttons-radio">
@@ -61,7 +66,7 @@
 			  <?php foreach($manuscript_pages as $manuscript_page): ?>
   		      <li>
   		          <div class="thumbnail">
-  		              <a data-content="<?php echo '<h4>' . $manuscript_page->settlement . ', ' . $manuscript_page->repository . ', ' . $manuscript_page->shelfmark . ', ' . $manuscript_page->pagelabel . '</h4>' . $manuscript_page->msTitle; ?>" rel="popover" href="<?php echo site_url('summarium/image/' . $manuscript_page->manuscripts_xmlid); ?>">
+  		              <a data-content="<?php echo '<h4>' . $manuscript_page->settlement . ', ' . $manuscript_page->repository . ', ' . $manuscript_page->shelfmark . ', ' . $manuscript_page->pagelabel . '</h4>' . $manuscript_page->msTitle; ?>" rel="popover" href="<?php echo site_url('summarium/image/' . $manuscript_page->manuscripts_xmlid . '/' . str_replace('f. ', '', $manuscript_page->pagelabel)); ?>">
 						  <img src="<?php echo site_url('res/mss_thumbs/' . $manuscript_page->filename); ?>" width="100" alt="<?php echo $manuscript_page->pagelabel; ?>" />
 					  </a>
   		              <p><?php echo $manuscript_page->pagelabel; ?></p>
@@ -71,7 +76,7 @@
   		      </ul>
 		  </div>
 		  <div id="image_detail_view">
-		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $current_manuscript_pages[0]->filename) ?>" alt="<?php echo $full_ms_identifier . ', ' . $current_manuscript_pages[0]->pagelabel  ; ?>" title="<?php echo $full_ms_identifier . ', ' . $current_manuscript_pages[0]->pagelabel; ?>" />
+		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $page->filename) ?>" alt="<?php echo $full_ms_identifier . ', ' . $page->pagelabel  ; ?>" title="<?php echo $full_ms_identifier . ', ' . $page->pagelabel; ?>" />
 		  </div>
 		 <br />
 	   <?php include(APPPATH . 'views/partials/_footer.php'); ?>

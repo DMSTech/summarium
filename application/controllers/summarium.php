@@ -21,12 +21,23 @@ class Summarium extends CI_Controller {
 		$this->load->view('summarium_view');
 	}
 	
-	public function image($xmlid = 'Brno905') {
+	public function image($xmlid = 'Brno905', $pagelabel = '') {
 		$this->load->model('manuscripts');
 		$data['xmlid'] = $xmlid;
 		$data['manuscripts'] = $this->manuscripts->getAvailableManuscripts();
 		$data['desc_metadata'] = $this->manuscripts->getMetadataForManuscript($xmlid);
 		$data['current_manuscript_pages'] = $this->manuscripts->getPagesForManuscript($xmlid);
+		$data['current_manuscript_page'] = '';
+		$data['pagelabel'] = $pagelabel;
+		if($pagelabel != '') {
+			foreach($data['current_manuscript_pages'] as $page) {
+				$page->pagelabel == 'f. ' . $pagelabel and $data['current_manuscript_page'] = $page;
+			}
+			// Error handling: if there is a pagelabel in the URL but we can't find it in the returned pages, show "Page not found"
+			if($data['current_manuscript_page'] == '') {
+				show_404();
+			}
+		}
 		$data['manuscript_pages'] = $this->manuscripts->getAllManuscriptPages();
 		// Error handling: if there is not descriptive metadata or no manuscript pages for given xmlid, show "Page not Found"
 		if(!$data['desc_metadata'] || !$data['manuscript_pages']) {
