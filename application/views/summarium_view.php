@@ -39,22 +39,22 @@
 	      </div>
 		  <div class="center main-section-select">
 		  <ul class="thumbnails">
-		      <li class="span3">
+		      <li class="span6">
 		          <div class="thumbnail">
 					  <a href="<?php echo site_url('summarium/image'); ?>">
-		              	<img src="http://placehold.it/260x180" alt="Image Navigation" title="Image Navigation">
+		              	<img src="<?php echo site_url('img/image_navigation_preview.jpg'); ?>" alt="Image Navigation" title="Image Navigation">
 					  </a>
-		              <h5><a href="<?php echo site_url('summarium/image'); ?>">Image Navigation</a></h5>
-		              <p>Image Navigation provides a way to...</p>
+		              <h3><a href="<?php echo site_url('summarium/image'); ?>">Image Navigation</a></h3>
+		              <p class="select-subsection-caption">View and annotate manuscript images</p>
 		          </div>
 		      </li>
-		      <li class="span3">
+		      <li class="span6">
 		          <div class="thumbnail">
 		              <a href="<?php echo site_url('summarium/text'); ?>">
-						  <img src="http://placehold.it/260x180" alt="Text Navigation" title="Text Navigation">
+						  <img src="http://placehold.it/400x285" alt="Text Navigation" title="Text Navigation">
 					  </a>
-		              <h5><a href="<?php echo site_url('summarium/text'); ?>">Text Navigation</a></h5>
-		              <p>On Text Navigation you can choose...</p>
+		              <h3><a href="<?php echo site_url('summarium/text'); ?>">Text Navigation</a></h3>
+		              <p class="select-subsection-caption">Compare texts from different manuscripts</p>
 					  </a>
 		          </div>
 		      </li>

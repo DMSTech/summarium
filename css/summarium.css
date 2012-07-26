@@ -222,9 +222,14 @@ footer a {
 
 /* Summarium Page - Select between Image and Text Navigation */
 .main-section-select {
-	padding-left:25%;
+	padding-left:5%;
 	padding-bottom:20%;
 }
+
+.select-subsection-caption {
+    font-size:100% !important; 
+ }
+
 
 /* End Summarium Page */
 
