@@ -60,7 +60,7 @@
   		  <ul class="thumbnails vertical">
 			  <?php foreach($manuscript_pages as $manuscript_page): ?>
   		      <li>
-  		          <div class="thumbnail">
+  		          <div class="thumbnail"><?php // TODO: use real thumbnails instead of full images reduced to 100px width for better performance ?>
   		              <a href="<?php echo site_url('summarium/image/' . $manuscript_page->manuscripts_xmlid); ?>"><img src="<?php echo site_url('res/mss/' . $manuscript_page->filename); ?>" width="100" alt="<?php echo $manuscript_page->pagelabel; ?>" title="<?php echo $manuscript_page->pagelabel; ?>" /></a>
   		              <p><?php echo $manuscript_page->pagelabel; ?></p>
   		          </div>
