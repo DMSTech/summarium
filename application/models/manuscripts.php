@@ -53,9 +53,12 @@ class Manuscripts extends CI_Model {
    * @return array the manuscript pages
    */
   public function getPagesForManuscript($xmlid) {
+      $manuscript = new stdClass;
+      $manuscript->filename = 'placeholder.jpg';
+      $manuscript->pagelabel = 'No pages found for this manuscript';
       $this->db->where('manuscripts_xmlid', $xmlid);
       $query = $this->db->get('manuscript_pages');
-      return $query->num_rows > 0 ? $query->result() : FALSE;
+      return $query->num_rows > 0 ? $query->result() : $manuscript;
   }
   
   /**
