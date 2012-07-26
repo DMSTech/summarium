@@ -57,6 +57,19 @@ class Manuscripts extends CI_Model {
       $query = $this->db->get('manuscript_pages');
       return $query->num_rows > 0 ? $query->result() : FALSE;
   }
+  
+  /**
+  * getAllManuscriptPages
+  *
+  * Retrieve all pages from DB table "manuscript_pages"
+  *
+  * @return array the manuscript pages
+  */
+ public function getAllManuscriptPages() {
+     $query = $this->db->get('manuscript_pages');
+     return $query->num_rows > 0 ? $query->result() : FALSE;
+ }
+  
     
     
 }

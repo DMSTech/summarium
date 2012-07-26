@@ -58,40 +58,18 @@
 		      <button class="btn">Compare</button>
 		  </div>
   		  <ul class="thumbnails vertical">
+			  <?php foreach($manuscript_pages as $manuscript_page): ?>
   		      <li>
   		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="" />
-  		              <p>p. 1</p>
+  		              <a href="<?php echo site_url('summarium/image/' . $manuscript_page->manuscripts_xmlid); ?>"><img src="<?php echo site_url('res/mss/' . $manuscript_page->filename); ?>" width="100" alt="<?php echo $manuscript_page->pagelabel; ?>" title="<?php echo $manuscript_page->pagelabel; ?>" /></a>
+  		              <p><?php echo $manuscript_page->pagelabel; ?></p>
   		          </div>
   		      </li>
-  		      <li>
-  		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="" />
-  		              <p>p. 2</p>
-  		          </div>
-  		      </li>
-  		      <li>
-  		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="" />
-  		              <p>p. 3</p>
-  		          </div>
-  		      </li>
-  		      <li>
-  		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="" />
-  		              <p>p. 4</p>
-  		          </div>
-  		      </li>	
-  		      <li>
-  		          <div class="thumbnail">
-  		              <img src="http://placehold.it/100x150" alt="" />
-  		              <p>p. 5</p>
-  		          </div>
-  		      </li>		  
+		      <?php endforeach; ?>
   		      </ul>
 		  </div>
 		  <div id="image_detail_view">
-		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $manuscript_pages[0]->filename) ?>" alt="<?php echo $full_ms_identifier . ', ' . $manuscript_pages[0]->pagelabel  ; ?>" title="<?php echo $full_ms_identifier . ', ' . $manuscript_pages[0]->pagelabel; ?>" />
+		  	<img id="image_detail_view_img" src="<?php echo site_url('res/mss/' . $manuscript_pages_current_ms[0]->filename) ?>" alt="<?php echo $full_ms_identifier . ', ' . $manuscript_pages_current_ms[0]->pagelabel  ; ?>" title="<?php echo $full_ms_identifier . ', ' . $manuscript_pages_current_ms[0]->pagelabel; ?>" />
 		  </div>
 		 <br />
 	   <?php include(APPPATH . 'views/partials/_footer.php'); ?>
