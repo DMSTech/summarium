@@ -23,6 +23,7 @@ class Summarium extends CI_Controller {
 	
 	public function image($xmlid = 'Brno905') {
 		$this->load->model('manuscripts');
+		$data['xmlid'] = $xmlid;
 		$data['manuscripts'] = $this->manuscripts->getAvailableManuscripts();
 		$data['desc_metadata'] = $this->manuscripts->getMetadataForManuscript($xmlid);
 		$data['manuscript_pages'] = $this->manuscripts->getPagesForManuscript($xmlid);

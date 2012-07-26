@@ -44,7 +44,7 @@
 			  </a>
 			  <ul class="dropdown-menu">
 				  <?php foreach($manuscripts as $manuscript): ?>
-				      <li><a href="<?php echo site_url('summarium/image/' . $manuscript->xmlid); ?>"><?php echo $manuscript->settlement . ', ' . $manuscript->repository . ', Ms ' . $manuscript->shelfmark; ?></a></li>
+				      <li><a href="<?php echo site_url('summarium/image/' . $manuscript->xmlid); ?>"><?php $xmlid == $manuscript->xmlid and print '<i class="icon-eye-open"></i>&nbsp;<span class="current_ms">'; ?><?php echo $manuscript->settlement . ', ' . $manuscript->repository . ', Ms ' . $manuscript->shelfmark; ?><?php $xmlid == $manuscript->xmlid and print '</span>'; ?></a></li>
 			      <?php endforeach; ?>
 			  </ul>
               <span class="span4">
