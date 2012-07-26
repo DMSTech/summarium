@@ -26,7 +26,7 @@ class Summarium extends CI_Controller {
 		$data['xmlid'] = $xmlid;
 		$data['manuscripts'] = $this->manuscripts->getAvailableManuscripts();
 		$data['desc_metadata'] = $this->manuscripts->getMetadataForManuscript($xmlid);
-		$data['manuscript_pages_current_ms'] = $this->manuscripts->getPagesForManuscript($xmlid);
+		$data['current_manuscript_pages'] = $this->manuscripts->getPagesForManuscript($xmlid);
 		$data['manuscript_pages'] = $this->manuscripts->getAllManuscriptPages();
 		// Error handling: if there is not descriptive metadata or no manuscript pages for given xmlid, show "Page not Found"
 		if(!$data['desc_metadata'] || !$data['manuscript_pages']) {
