@@ -278,4 +278,5 @@ footer a {
 
 .current_ms {
 	font-weight:bold;
+	border-bottom:1px dotted silver;
 }
