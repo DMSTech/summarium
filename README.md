@@ -17,4 +17,4 @@ To install on your local or a different server:
   * $db['default']['username'] = 'username';
   * $db['default']['password'] = 'password';
   * $db['default']['database'] = 'summarium';
-* Use the the SQL file under misc/setup-database.sql to set up the necessary database tables
+* Use the the SQL file under application/misc/setup-database.sql to set up the necessary database tables
